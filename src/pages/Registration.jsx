@@ -45,11 +45,10 @@ function Registration() {
   );
 
   async function createProduct(values) {
-    const postvalues = productModel(values, chips);
-    console.log(postvalues);
+    const postValues = productModel(values, chips);
 
     try {
-      const data = await api.createProductAxios(postvalues);
+      const data = await api.createProductAxios(postValues);
       navigate("/detailProduct", { state: data });
     } catch (e) {
       console.log(e.name);

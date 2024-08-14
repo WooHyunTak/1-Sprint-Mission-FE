@@ -71,7 +71,7 @@ function Items() {
     <main>
       <div className="products_container">
         <Search
-          isMobile={view === "isMobile" ? true : false}
+          isMobile={view === "isMobile"}
           order={params.order}
           onChange={onChange}
         />

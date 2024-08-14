@@ -1,5 +1,5 @@
 import arrowLeft from "../image/arrow_left.png";
-import arrowRigth from "../image/arrow_right.png";
+import arrowRight from "../image/arrow_right.png";
 import "../css/paging.css";
 import { useEffect, useState } from "react";
 
@@ -42,9 +42,9 @@ function Paging({ onChange, params, totalCount }) {
   const prevBtn = () => {
     const arr = [...pagingNum];
     if (arr[0] === 1) return;
-    const newcount = arr[0] - 1;
+    const newCount = arr[0] - 1;
     arr.pop();
-    arr.unshift(newcount);
+    arr.unshift(newCount);
     setPagingNum(arr);
   };
 
@@ -52,9 +52,9 @@ function Paging({ onChange, params, totalCount }) {
   const nextBtn = () => {
     const arr = [...pagingNum];
     if (!moreData(arr.at(-1))) return;
-    const newcount = arr.at(-1) + 1;
+    const newCount = arr.at(-1) + 1;
     arr.shift();
-    arr.push(newcount);
+    arr.push(newCount);
     setPagingNum(arr);
   };
 
@@ -76,7 +76,7 @@ function Paging({ onChange, params, totalCount }) {
         />
       ))}
       <button className="pre_next_btn" onClick={nextBtn}>
-        <img src={arrowRigth} alt="다음 화살표"></img>
+        <img src={arrowRight} alt="다음 화살표"></img>
       </button>
     </div>
   );
