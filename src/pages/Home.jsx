@@ -1,8 +1,8 @@
 import "../css/reset.css";
 import "../css/app.css";
-import ProductList from "../components/Productlist.js";
-import Search from "../components/Search.js";
-import Paging from "../components/Paging.js";
+import ProductList from "../components/Productlist.jsx";
+import Search from "../components/Search.jsx";
+import Paging from "../components/Paging.jsx";
 import useWindowSize from "../hooks/useResize.js";
 import { useState, useEffect } from "react";
 import * as api from "../api.js";

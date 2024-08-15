@@ -1,4 +1,4 @@
-import Header from "./Header.js";
+import Header from "./Header.jsx";
 import "../css/reset.css";
 import "../css/app.css";
 import { Outlet } from "react-router-dom";

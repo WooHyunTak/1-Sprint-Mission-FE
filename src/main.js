@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home.js";
-import Faq from "./pages/Faq.js";
-import Privacy from "./pages/Privacy.js";
-import App from "./components/App.js";
-import Items from "./pages/Items.js";
-import Registration from "./pages/Registration.js";
-import DetailProduct from "./pages/DetailProduct.js";
+import Home from "./pages/Home.jsx";
+import Faq from "./pages/Faq.jsx";
+import Privacy from "./pages/Privacy.jsx";
+import App from "./components/App.jsx";
+import Items from "./pages/Items.jsx";
+import Registration from "./pages/Registration.jsx";
+import DetailProduct from "./pages/DetailProduct.jsx";
 
 function Main() {
   return (
